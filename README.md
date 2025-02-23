@@ -1,5 +1,4 @@
 <h3 align="center"><p style="color: green;font-weight: bold; font-size: 68px;">locustx</p></h3>
-<hr />
 
 
 # 1.如何运行
@@ -25,7 +24,7 @@ locust -f .\locustfile.py
 #### 2.2.1 pyget方法
 ```
 url = CommonConfig.get_cf("config", "order_url", sys._getframe().f_code.co_name)
-header = commonTask.getHeader(self.user.muctoken)
+header = commonTask.getHeader(self.user.token)
 
 res = self.pyget(url=url, headers=header, customerId=self.customerId)
 # 将customerId作为字典格式传给pyget方法进行处理
